@@ -19,7 +19,7 @@ fetch('https://api.citybik.es/v2/networks?fields=company,location,name')
 
 
         for (let i = 0; i < data.networks.length; i++) {
-            if (data.networks[i].location.city.includes('Paris')) {
+            if (data.networks[i].location.city.includes('London')) {
                 let pLi = document.createElement('li');
                 if (!data.networks[i].company) pLi.innerHTML = 'безымянная';
                 else
